@@ -7,10 +7,10 @@ Xft.hinting:    true
 Xft.hintstyle:  hintslight
 Xft.lcdfilter:  lcddefault
 
-!URxvt.intensityStyles:  true
-!URxvt.font:             xft:Hack:bold:size=8
-!URxvt.boldFont:         xft:Hack:bold:size=8
-!URxvt.saveLines:        8192
+URxvt.intensityStyles:  true
+URxvt.font:             xft:Hack:bold:size=8
+URxvt.boldFont:         xft:Hack:bold:size=8
+URxvt.saveLines:        8192
 
 URxvt*scrollTtyOutput:    false
 URxvt*scrollWithBuffer:   true
@@ -29,25 +29,13 @@ URxvt.keysym.C-equal:     resize-font:bigger
 URxvt.keysym.C-0:      	  resize-font:reset
 URxvt.keysym.C-question:  resize-font:show
 
-!rofi.font:              Noto Sans Bold 8
-!rofi.modi:              run
-!rofi.lines:             1
-!rofi.columns:           4
-!rofi.line-margin:       5
-!rofi.line-padding:      10
-!rofi.separator-style:   none
-!rofi.hide-scrollbar:    false
-!rofi.sidebar-mode:      false
-!rofi.fullscreen:        false
-!rofi.padding:           200
-
 rofi.theme: ~/.cache/wal/colors-rofi-light.rasi
 
 rofi.color-enabled: true
-! rofi.color-window: argb:df292d37, #292d37, #17a086
-! rofi.color-normal: argb:00292d37, #ffffff, argb:00292d37, argb:00292d37, #17a086
-! rofi.color-active: argb:00292d37, #ffffff, argb:00292d37, argb:00292d37, #ffffff
-! rofi.color-urgent: argb:00292d37, #ffffff, argb:00292d37, argb:00292d37, #ffffff
+ rofi.color-window: argb:df292d37, #292d37, #17a086
+ rofi.color-normal: argb:00292d37, #ffffff, argb:00292d37, argb:00292d37, #17a086
+ rofi.color-active: argb:00292d37, #ffffff, argb:00292d37, argb:00292d37, #ffffff
+ rofi.color-urgent: argb:00292d37, #ffffff, argb:00292d37, argb:00292d37, #ffffff
 
 rofi.font: Hack 12
 rofi.eh: 1
