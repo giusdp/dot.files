@@ -7,8 +7,10 @@ All it needs is:
  - Feh (for the background image)
  - Rofi (for the app launcher)
  - The font Hack
- - Urxtv (The terminal)
- - Compton (Compositor for nice effects like shadows, 
+ - Urxtv tThe terminal)
+ - Compton (compositor for nice effects like shadows, 
 transparency and blurs)
+ - Dunst (notification manger)
+ - Udisks2 and udiskie (to handle automounting)
 
 After installing PyWal (and it's dependencies) run it on the wallpaper in the Wallpaper folder. It will create the colorscheme that will be used everywhere. 
