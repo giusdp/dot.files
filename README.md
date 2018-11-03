@@ -8,5 +8,7 @@ All it needs is:
  - Rofi (for the app launcher)
  - The font Hack
  - Urxtv (The terminal)
+ - Compton (Compositor for nice effects like shadows, 
+transparency and blurs)
 
 After installing PyWal (and it's dependencies) run it on the wallpaper in the Wallpaper folder. It will create the colorscheme that will be used everywhere. 
