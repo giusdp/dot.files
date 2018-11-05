@@ -19,7 +19,7 @@ font pango:monospace 8
 new_window 1pixel
 
 # Set colors from Xresources
-# Change 'color7' and 'color2' to whatever colors you want i3 to use 
+# Change 'color7' and 'color2' to whatever colors you want i3 to use
 # from the generated scheme.
 # NOTE: The '#f0f0f0' in the lines below is the color i3 will use if
 # it fails to get colors from Xresources.
@@ -191,11 +191,10 @@ bindsym $mod+r mode "resize"
 # }
 
 exec --no-startup-id volumeicon
-exec --no-startup-id ~/.config/polybar/launch.sh
-exec --no-startup-id ~/.config/polybar/i3listen.py
 #exec --no-startup-id nm-applet
 exec --no-startup-id ~/.fehbg &
 exec --no-startup-id wal -R
 exec --no-startup-id compton &
 exec --no-startup-id dunst &
 exec --no-startup-id udiskie &
+exec --no-startup-id sleep 0.4; sh ~/.config/i3/beautify.sh
