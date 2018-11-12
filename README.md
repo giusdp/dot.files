@@ -7,13 +7,16 @@ All it needs is:
  - Feh (for the background image)
  - Rofi (for the app launcher)
  - The font Hack
- - Urxtv tThe terminal)
+ - Urxtv (The terminal)
  - Compton (compositor for nice effects like shadows, 
 transparency and blurs)
  - Dunst (notification manger)
  - Udisks2 and udiskie (to handle automounting)
+ - Betterlockscreen ([Link to the repository](https://github.com/pavanjadhaw/betterlockscreen))
 
 After installing PyWal (and it's dependencies) run it on the wallpaper in the Wallpaper folder. It will create the colorscheme that will be used everywhere. 
+
+Betterlockscreen must be launched giving it an image to be used as lockscreen, so after installing it give it an image so then it's ready to make the lockscreens.
 
 Be careful with the paths in the scripts like beautify.sh or in the 
 i3 config file. For example in the i3 config file, beautify is called 
