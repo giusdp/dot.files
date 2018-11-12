@@ -7,12 +7,13 @@ All it needs is:
  - Feh (for the background image)
  - Rofi (for the app launcher)
  - The font Hack
- - Urxtv (The terminal)
+ - Urxtv (the terminal)
  - Compton (compositor for nice effects like shadows, 
 transparency and blurs)
  - Dunst (notification manger)
  - Udisks2 and udiskie (to handle automounting)
  - Betterlockscreen ([Link to the repository](https://github.com/pavanjadhaw/betterlockscreen))
+ - Unclutter (to make the mouse disappear when not used)
 
 After installing PyWal (and it's dependencies) run it on the wallpaper in the Wallpaper folder. It will create the colorscheme that will be used everywhere. 
 
