@@ -61,17 +61,17 @@ modules-left = xwindow
 modules-center = i3
 modules-right = memory cpu temperature battery date
 
-;tray-position = center
-;tray-padding = 10
-;tray-transparent = true
-;tray-background = #0063ff
-;tray-offset-x = 10
+tray-position = right
+tray-padding = 2
+tray-transparent = false
+tray-background = ${colors.background}
+tray-offset-x = 0
 
 ;wm-restack = bspwm
 
-override-redirect = true
+override-redirect = false
 
-wm-restack = i3
+;wm-restack = i3
 
 scroll-up = i3wm-wsprev
 scroll-down = i3wm-wsnext
@@ -79,6 +79,21 @@ scroll-down = i3wm-wsnext
 ;--------------------------------------------
 ; modules                                   ;
 ;--------------------------------------------
+[module/network]
+type = internal/network
+interface = wlp3s0
+interval = 3.0
+udspeed-minwidth = 0
+format-connected = <label-connected>
+format-disconnected = <label-disconnected>
+
+label-connected = %essid%
+label-connected-foreground = ${colors.icon_color}
+
+label-disconnected = Not Connected
+label-disconnected-foreground = ${colors.icon_color}
+
+click-left = nm-connection-editor
 
 [module/xwindow]
 y-offset      = 10
@@ -107,14 +122,15 @@ format-discharging = <label-discharging>
 
 format-discharging-prefix = "BAT "
 format-discharging-prefix-foreground = ${colors.battery_p_bg}
+;format-discharging-prefix-foreground = ${xrdb:color6}
 label-discharging            = "%percentage%%"
 label-discharging-background =  ${colors.background}
-;label-discharging-foreground =  ${colors.battery_p_bg}
+;label-discharging-foreground = ${colors.battery_p_bg}
 ;label-discharging-padding    = 0
 
 format-full = <label-full>
 
-label-full-prefix     = "BAT "
+format-full-prefix     = "BAT "
 label-full            = "%percentage%%"
 label-full-background =  ${colors.background}
 label-full-foreground =  ${colors.foreground}
@@ -219,13 +235,13 @@ label = %gb_used%
 type = internal/date
 interval = 1
 
-date = %a
-date-alt = "%m/%d/%Y"
+date = "%a, %d/%m"
+date-alt = %m/%d/%Y
 
 time = %I:%M %p
 time-alt = %I:%M:%S %p
 
-format-prefix = "| "
+;format-prefix = "| "
 format-prefix-foreground = ${colors.fg}
 ;format-underline = #0a6cf5
 
